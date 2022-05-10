@@ -1,4 +1,8 @@
 [
     { "path" :  "", "router"  : "./routes/web" },
-    { "path" :  "/sample", "router"  : "./routes/sample", "logic" : "./modules/logic/sample_logic" }
+    { "path" :  "/sample", "router"  : "./routes/sample", "logic" : "./modules/logic/sample_logic" },
+    { "path" :  "/scope", "router"  : "./routes/scope", "logic" : "./modules/logic/scopelogic" },
+    { "path" :  "/risk", "router"  : "./routes/risk", "logic" : "./modules/logic/risklogic" },
+    { "path" :  "/workestimationmaster", "router"  : "./routes/workestimation", "logic" : "./modules/logic/workestimationlogic" },
+    { "path" :  "/strategy", "router"  : "./routes/strategy", "logic" : "./modules/logic/strategylogic" }
 ]

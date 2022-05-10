@@ -43,6 +43,11 @@ class CrudLogic {
 
     }
 
+    static getIncludes()
+    {
+        return null
+    }
+
     static async findAll(where=null, offset=null, limit=null,  order=null)
     {
         try{
@@ -73,6 +78,10 @@ class CrudLogic {
                     opt.where,
                     where 
             ]}
+
+            let includes = this.getIncludes();
+            if(includes != null)
+                opt.include = includes;
 
             console.log(opt)
 
